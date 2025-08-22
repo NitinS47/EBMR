@@ -9,7 +9,7 @@ import google.generativeai as genai
 import time
 
 # Configure Google Generative AI
-genai.configure(api_key="AIzaSyAnK63UvpP6vu8AtRGDeKa7blhYQ-LX9FE")
+genai.configure(api_key="xxxxxxxx")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Load model
@@ -93,4 +93,5 @@ if camera_button:
             st.markdown("<h5 style='text-align: center; color: grey;'><b>Recommended Songs</b></h5>", unsafe_allow_html=True)
             st.text(response.text)
 else:
+
     st.markdown("<h5 style='text-align: center; color: grey;'>Click the button to begin!</h5>", unsafe_allow_html=True)
